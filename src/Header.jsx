@@ -21,7 +21,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="menu-icon" onClick={toggleMenu}>
-          &#9776; {/* Ícone do menu hamburguer */}
+          &#9776; 
         </div>
         <nav className={`menu ${isOpen ? 'open' : ''}`}>
           <ul>
