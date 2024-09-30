@@ -5,12 +5,12 @@ body {
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Garante que o corpo ocupe a altura total */
+  min-height: 100vh;
 }
 
 .App {
   text-align: center;
-  flex: 1; /* Permite que a App preencha o espaço disponível */
+  flex: 1;
 }
 
 header, footer {
@@ -46,8 +46,8 @@ header {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza os elementos */
-  flex: 1; /* Permite que a seção principal ocupe o espaço restante */
+  align-items: center;
+  flex: 1;
 }
 
 h2 {
@@ -56,39 +56,39 @@ h2 {
 
 .carousel {
   display: flex;
-  overflow-x: hidden; /* Oculta rolagem horizontal */
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
   justify-content: center;
-  height: 400px; /* Aumenta a altura do carrossel */
+  height: 400px;
 }
 
 .carousel-item {
-  flex: 0 0 auto; /* Mantém o item com largura fixa */
-  width: 280px; /* Ajusta a largura dos itens */
-  margin: 0 15px; /* Aumenta a margem lateral para separar os filmes */
+  flex: 0 0 auto;
+  width: 280px;
+  margin: 0 15px;
   text-align: center;
   scroll-snap-align: start;
 }
 
 .movie-image {
   width: 100%;
-  height: auto; /* Garante que a imagem mantenha a proporção */
+  height: auto;
   border-radius: 10px;
 }
 
 h3 {
-  margin: 10px 0 5px; /* Margem entre o título e a descrição */
-  font-size: 1.2rem; /* Tamanho da fonte do título */
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
 }
 
 p {
-  margin: 5px 0; /* Margem entre os parágrafos */
-  color: #555; /* Cor da fonte mais suave para descrições */
-  font-size: 0.9rem; /* Tamanho da fonte para descrição */
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.9rem;
 }
 
 .carousel-item p:last-child {
-  font-weight: bold; /* Para destacar a descrição do filme */
+  font-weight: bold;
 }
 
 .view-more-button {
@@ -108,7 +108,7 @@ p {
 .footer {
   padding: 10px;
   width: 100%;
-  margin-top: auto; /* Garante que o footer fique no final */
+  margin-top: auto;
 }
 
 .social-media {
@@ -149,7 +149,7 @@ p {
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  position: fixed; /* Mantém o botão no canto inferior direito */
+  position: fixed;
   bottom: 20px;
   right: 20px;
 }
@@ -159,21 +159,21 @@ p {
 }
 
 .dark-mode {
-  background-color: #121212; /* Cor de fundo escura */
-  color: #ffffff; /* Texto claro */
+  background-color: #121212;
+  color: #ffffff;
 }
 
 .spacer {
-  margin: 100px 0; /* Ajuste a margem conforme necessário */
+  margin: 100px 0;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff6663; /* Cor do cabeçalho */
-  padding: 10px 20px; /* Espaçamento */
-  color: white; /* Cor do texto */
+  background-color: #ff6663;
+  padding: 10px 20px;
+  color: white;
 }
 
 .navbar {
@@ -182,57 +182,56 @@ p {
 }
 
 .main-nav ul {
-  list-style-type: none; /* Remove marcadores da lista */
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Exibe os links da navegação principal em linha */
+  display: flex;
 }
 
 .main-nav li {
-  margin: 0 15px; /* Espaçamento entre os links */
+  margin: 0 15px;
 }
 
 .menu-icon {
   cursor: pointer;
   font-size: 24px;
-  margin-left: 20px; /* Espaçamento entre a navegação e o menu hamburguer */
+  margin-left: 20px;
 }
 
 .menu {
-  display: none; /* Esconde o menu por padrão */
-  position: absolute; /* Posiciona o menu de forma absoluta */
-  top: 70px; /* Aumente este valor para mover o menu mais para baixo */
-  right: 20px; /* Alinha à direita */
-  background-color: #ffcfce; /* Cor de fundo do menu */
-  width: 200px; /* Largura do menu */
-  border-radius: 5px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-  z-index: 1000; /* Fica acima de outros elementos */
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #ffcfce;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
   color: #121212;
 }
 
-
 .menu.open {
-  display: block; /* Exibe o menu quando aberto */
+  display: block;
 }
 
 .menu ul {
-  list-style-type: none; /* Remove marcadores da lista */
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .menu li {
-  padding: 15px; /* Espaçamento interno de cada item */
+  padding: 15px;
 }
 
 .menu li a {
-  color: rgb(0, 0, 0); /* Cor do texto */
-  text-decoration: none; /* Remove underline */
-  display: flex; /* Exibe o ícone e o texto em linha */
-  align-items: center; /* Alinha verticalmente */
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .menu li a:hover {
-  background-color: #ff4c51; /* Cor de fundo ao passar o mouse */
+  background-color: #ff4c51;
 }
