@@ -1,0 +1,238 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o corpo ocupe a altura total */
+}
+
+.App {
+  text-align: center;
+  flex: 1; /* Permite que a App preencha o espaço disponível */
+}
+
+header, footer {
+  background-color: #ff6663;
+  color: white;
+}
+
+header {
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.home {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos */
+  flex: 1; /* Permite que a seção principal ocupe o espaço restante */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: hidden; /* Oculta rolagem horizontal */
+  scroll-snap-type: x mandatory;
+  justify-content: center;
+  height: 400px; /* Aumenta a altura do carrossel */
+}
+
+.carousel-item {
+  flex: 0 0 auto; /* Mantém o item com largura fixa */
+  width: 280px; /* Ajusta a largura dos itens */
+  margin: 0 15px; /* Aumenta a margem lateral para separar os filmes */
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.movie-image {
+  width: 100%;
+  height: auto; /* Garante que a imagem mantenha a proporção */
+  border-radius: 10px;
+}
+
+h3 {
+  margin: 10px 0 5px; /* Margem entre o título e a descrição */
+  font-size: 1.2rem; /* Tamanho da fonte do título */
+}
+
+p {
+  margin: 5px 0; /* Margem entre os parágrafos */
+  color: #555; /* Cor da fonte mais suave para descrições */
+  font-size: 0.9rem; /* Tamanho da fonte para descrição */
+}
+
+.carousel-item p:last-child {
+  font-weight: bold; /* Para destacar a descrição do filme */
+}
+
+.view-more-button {
+  background-color: #ff6663;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.view-more-button:hover {
+  background-color: #ff4c51;
+}
+
+.footer {
+  padding: 10px;
+  width: 100%;
+  margin-top: auto; /* Garante que o footer fique no final */
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+.search-bar {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.dark-mode-toggle {
+  background-color: #ff6663;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed; /* Mantém o botão no canto inferior direito */
+  bottom: 20px;
+  right: 20px;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #ff4c51;
+}
+
+.dark-mode {
+  background-color: #121212; /* Cor de fundo escura */
+  color: #ffffff; /* Texto claro */
+}
+
+.spacer {
+  margin: 100px 0; /* Ajuste a margem conforme necessário */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6663; /* Cor do cabeçalho */
+  padding: 10px 20px; /* Espaçamento */
+  color: white; /* Cor do texto */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav ul {
+  list-style-type: none; /* Remove marcadores da lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Exibe os links da navegação principal em linha */
+}
+
+.main-nav li {
+  margin: 0 15px; /* Espaçamento entre os links */
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 20px; /* Espaçamento entre a navegação e o menu hamburguer */
+}
+
+.menu {
+  display: none; /* Esconde o menu por padrão */
+  position: absolute; /* Posiciona o menu de forma absoluta */
+  top: 70px; /* Aumente este valor para mover o menu mais para baixo */
+  right: 20px; /* Alinha à direita */
+  background-color: #ffcfce; /* Cor de fundo do menu */
+  width: 200px; /* Largura do menu */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  z-index: 1000; /* Fica acima de outros elementos */
+  color: #121212;
+}
+
+
+.menu.open {
+  display: block; /* Exibe o menu quando aberto */
+}
+
+.menu ul {
+  list-style-type: none; /* Remove marcadores da lista */
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 15px; /* Espaçamento interno de cada item */
+}
+
+.menu li a {
+  color: rgb(0, 0, 0); /* Cor do texto */
+  text-decoration: none; /* Remove underline */
+  display: flex; /* Exibe o ícone e o texto em linha */
+  align-items: center; /* Alinha verticalmente */
+}
+
+.menu li a:hover {
+  background-color: #ff4c51; /* Cor de fundo ao passar o mouse */
+}
