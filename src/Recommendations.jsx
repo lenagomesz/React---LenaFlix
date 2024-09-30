@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import MovieCarousel from './MovieCarousel';
-import './App.css'; // Certifique-se de que este CSS contém os estilos necessários
-
+import './App.css'; 
 const Recommendations = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
